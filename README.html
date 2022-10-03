@@ -1,0 +1,46 @@
+<h1 id="discord-custom-rich-presence-client">Discord Custom Rich Presence Client</h1>
+<p>This is a simple client for Discord&#39;s Rich Presence API. It allows you to set a custom activity for your Discord profile, allowing the use of images and multiple fields</p>
+<p><img src="/example.png" alt="Example" title="Example"></p>
+<h2 id="quick-setup">Quick Setup</h2>
+<ol>
+<li>Download the latest release from the <a href="https://github.com/acoolindividual/Discord-Custom-Rich-Presence-Client/releases/">releases page</a></li>
+<li>Make yourself an application on the <a href="https://discord.com/developers/applications">Discord Developer Portal</a></li>
+<li>Under the Rich Presence tab, upload the images you&#39;d like to use and take note of their names</li>
+<li>Take note of your application&#39;s Client ID, present in the General Information tab</li>
+<li>Unzip the release file and open config.json in a text editor</li>
+<li>Get your Discord token by following <a href="https://discordhelp.net/discord-token">this guide</a></li>
+<li>Fill out the config.json file using the config guide (below)</li>
+<li>Start the client by running the .exe file</li>
+<li>End the client by closing the command prompt window or pressing Ctrl+C</li>
+</ol>
+<h2 id="config-guide">Config Guide</h2>
+<p>The config.json file is very stringent on formatting and will not work if important characters (such as commas, brackets, and quotes) are missing or misplaced. It is recommended to use a JSON validator to ensure that your config file is valid before starting the client.</p>
+<p>You must remove optional fields which you do not use. For example, if you do not want to use the &quot;state&quot; field, you must remove the entire &quot;state&quot; key/value pair from the config file. Ensure that the commas in the field are correct, and that the last field in the config file does not have a comma after it.</p>
+<p>I intend to add an easier way to configure the client in the future, but for now this is the only way.</p>
+<h2 id="json-keys-optional-">JSON Keys (optional)</h2>
+<ul>
+<li>details - The first inline field of text in the activity</li>
+<li>state - The second inline field of text in the activity</li>
+<li>largeImageName - The name of the asset you&#39;d like to use as your large image (can be added at <a href="https://discord.com/developers/applications/(YOUR">https://discord.com/developers/applications/(YOUR</a> APP ID)/rich-presence/assets) (if applicable)</li>
+<li>largeImageText - The text to display when hovering over the large image (if applicable)</li>
+<li>smallImageName - The name of the asset you&#39;d like to use as your small image (can be added at <a href="https://discord.com/developers/applications/(YOUR">https://discord.com/developers/applications/(YOUR</a> APP ID)/rich-presence/assets) (if applicable)</li>
+<li>smallImageText - The text to display when hovering over the small image (if applicable)</li>
+<li>showTimestamp - Whether or not to show the timestamp in the activity, can be true or false (do not put quotes around the value)</li>
+<li>timestamp - The timestamp to use in the activity in <a href="https://www.epochconverter.com/">Epoch format</a> (if applicable) (string)</li>
+</ul>
+<h2 id="json-keys-required-">JSON keys (required)</h2>
+<ul>
+<li>userToken - Your Discord <a href="https://discordhelp.net/discord-token">user token</a></li>
+<li>applicationID - Your application&#39;s <a href="https://discord.com/developers/applications">Client ID</a></li>
+<li>presenceName - What you&#39;d like the name of the presence to show up as</li>
+<li>presenceStatus - online, idle, or dnd (string)</li>
+<li>presenceType - PLAYING, WATCHING, LISTENING, or STREAMING (string)</li>
+</ul>
+<h1 id="responsibility-disclaimer">Responsibility Disclaimer</h1>
+<p>This client technically puts your account online as a selfbot, which is against Discord&#39;s Terms of Service. The risk of having action taken against your account is negligibly low, but in any event, I am not responsible for bans, suspensions, or other punishments you may receive for using this client. </p>
+<h1 id="to-do-list">To-Do list</h1>
+<ul>
+<li>[ ] add a user-configurable .txt file with easier configuration options</li>
+<li>[ ] better error handling and bug fixes</li>
+<li>[ ] revamp README guide to be more user-friendly and easier to understand</li>
+</ul>

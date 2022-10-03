@@ -1,0 +1,23 @@
+{
+  "name": "presence",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js-selfbot-rpc": "^1.0.1",
+    "discord.js-selfbot-v13": "^2.7.1"
+  },
+  "bin":"index.js",
+  "pkg": {
+    "scripts": "index.js",
+    "assets": [
+      "node_modules/**/*",
+      "node_modules/vm2/lib/setup-sandbox.js"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "optional":{
+        "comment":"delete all optional fields if you don't need them, make sure that the final line does not end with a comma",
+        "details":"The details (first inline field) of the presence (string)",
+        "state": "The state (second inline field) of the presence (string)",
+        "largeImageName": "The name of the asset you'd like to use as your large image (can be added at https://discord.com/developers/applications/(YOUR APP ID)/rich-presence/assets)",
+        "largeImageText": "The text that appears when you hover over the large image",
+        "smallImageName": "The name of the asset you'd like to use as your small image (can be added at https://discord.com/developers/applications/(YOUR APP ID)/rich-presence/assets)",
+        "smallImageText": "The text that appears when you hover over the small image",
+        "showTimestamp":"Whether or not to show the timestamp (boolean (true/false, no quotes))",
+        "timestamp":"Timestamp (in Epoch format (https://www.epochconverter.com/)) to show count up after. Setting to a future time will begin counting at that timestamp. Leaving this blank will start at the current timestamp (number)"
+    },
+    "required":{
+        "userToken":"Your Discord user token (https://discordhelp.net/discord-token) (string)",
+        "applicationId":"The ID of your application from the developer portal (https://discord.com/developers/applications) (string)",
+        "presenceName":"What you'd like the name of the presence to show up as (string)",
+        "presenceStatus":"online, idle, or dnd (string)",
+        "presenceType":"PLAYING, WATCHING, LISTENING, STREAMING (string)"
+    }
+}
